@@ -1,0 +1,269 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 1600px;
+  position: relative;
+
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0;
+  padding: 0 200px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: none;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 0;
+  padding: 25px 0;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: #000000;
+}
+
+.main-logo:hover {
+  cursor: pointer;
+}
+
+.menu-button {
+  display: block;
+  margin: 0 0;
+  padding: 0 0;
+  width: 50px;
+  height: 28px;
+
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+
+.menu-button:hover {
+  opacity: 0.5;
+}
+
+.menu-button:active {
+  opacity: 0.2;
+}
+
+.menu {
+  display: none;
+  margin: 0 0;
+  padding: 0 0;
+  padding-top: 168px;
+  min-height: 832px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(13, 16, 19, 0.96);
+}
+
+.menu ul {
+  margin: 0 0;
+  margin-left: 298px;
+  padding: 0 0;
+
+  list-style: none;
+}
+
+.menu a {
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 700;
+  color: #626262;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.menu a:hover {
+  color: #ffffff;
+
+  background: linear-gradient(to right, #ffffff, #ffffff 100%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 3px 3px;
+}
+
+.close-button {
+  position: absolute;
+  right: 189px;
+  top: 89px;
+
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background: none;
+  border: none;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.close-button:active {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.close-button::before, .close-button::after {
+  content: "";
+
+  position: absolute;
+  left: 33px;
+  bottom: 21px;
+  width: 4px;
+  height: 50px;
+
+  background-color: #ffffff;
+}
+
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
+
+.big-slider {
+  margin: 0 0;
+  padding: 0 0;
+
+  background-color: #acb0b5;
+}
+
+.big-slider ul {
+  margin: 0 0;
+  padding: 0 0;
+
+  list-style: none;
+}
+
+.big-slider li {
+  margin: 0 0;
+  padding: 0 0;
+  height: 1000px;
+}
+
+.about {
+  margin: 0 0;
+  padding: 0 0;
+  padding-top: 74px;
+}
+
+.about p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 965px;
+  text-align: center;
+}
+
+.about-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 200;
+}
+
+.about-title b {
+  font-weight: 700;
+}
+
+.about-conditions {
+  margin-top: 31px;
+
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.about-conditions:after {
+  content: "";
+
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 42px auto 0;
+
+  background-color: #000000;
+}
+
+.about-text {
+  margin-top: 56px;
+  padding-left: 45px;
+}
+
+.about-text:last-of-type {
+  margin-top: 30px;
+}
