@@ -5,14 +5,14 @@
     <title>QUOTES</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:100,200,300,400,500,600,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="main-logo">Quotes</a>
       <a class="menu-button" href="#">Menu</a>
     </header>
-    <section class="menu">
+    <section class="modal-menu">
       <h2 class="visually-hidden">Menu</h2>
       <ul>
         <li><a href="#">Home</a></li>
@@ -25,9 +25,13 @@
       </ul>
       <button class="close-button" type="button">Close</button>
     </section>
-    <section class="big-slider">
+    <section class="big-slider slide" dir="ltr" data-glider-links="glider-bottom" data-glider-autoplay>
       <ul>
-        <li><img src="img/big-slide-3.jpg" width="1600" height="1000" alt="Smile it costs you nothing"></li>
+        <li><img src="img/big-slide.jpg" alt="" class="slider__image"></li>
+  		  <li><img src="img/big-slide.jpg" alt="" class="slider__image"></li>
+  		  <li><img src="img/big-slide.jpg" alt="" class="slider__image"></li>
+  		  <li><img src="img/big-slide.jpg" alt="" class="slider__image"></li>
+  		  <li><img src="img/big-slide.jpg" alt="" class="slider__image"></li>
       </ul>
     </section>
     <section class="about">
@@ -38,14 +42,38 @@
       <p class="about-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at nunc libero. Nam metus lorem, rhoncus ac mattis ornare, blandit vel risus.</p>
     </section>
     <section class="small-slider">
-      <ul>
-        <li>
-          <div class="quote">
-            <blockquote>I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.</blockquote>
-            <p class="source">Audrey Hepburn</p>
-          </div>
-        </li>
-      </ul>
+      <input type="radio" name="slider__check" class="slider__check" id="slider__check-1" checked><label for="slider__check-1" class="slider__label">1</label>
+      <div class="slider-quote">
+        <div class="quote">
+          <blockquote>I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.</blockquote>
+          <p class="source">Audrey Hepburn</p>
+        </div>
+        <img src="img/small-slide-1.jpg" width="798" height="650">
+      </div>
+      <input type="radio" name="slider__check" class="slider__check" id="slider__check-2"><label for="slider__check-2" class="slider__label">2</label>
+      <div class="slider-quote">
+        <div class="quote">
+          <blockquote>I'm tough, I'm ambitious, and I know exactly what I want. If that makes me a bitch, okay.</blockquote>
+          <p class="source">Madonna</p>
+        </div>
+        <img src="img/small-slide-1.jpg" width="798" height="650">
+      </div>
+      <input type="radio" name="slider__check" class="slider__check" id="slider__check-3"><label for="slider__check-3" class="slider__label">3</label>
+      <div class="slider-quote">
+        <div class="quote">
+          <blockquote>If you want something said, ask a man; if you want something done, ask a woman.</blockquote>
+          <p class="source">Margaret Thatcher</p>
+        </div>
+        <img src="img/small-slide-1.jpg" width="798" height="650">
+      </div>
+      <input type="radio" name="slider__check" class="slider__check" id="slider__check-4"><label for="slider__check-4" class="slider__label">4</label>
+      <div class="slider-quote">
+        <div class="quote">
+          <blockquote>Of course I am not worried about intimidating men. The type of man who will be intimidated by me is exactly the type of man I have no interest in.</blockquote>
+          <p class="source">Chimamanda Ngozi Adichie</p>
+        </div>
+        <img src="img/small-slide-1.jpg" width="798" height="650">
+      </div>
     </section>
     <section class="reasons">
       <h2>Reasons to be happy</h2>
@@ -141,14 +169,14 @@
            My State - My Country<br>
            987658
          </p>
-        <p>Phone: + 01 234 567 890<br>
+        <p>Phone: <a href="tel:+01234567890">+ 01 234 567 890</a><br>
            Fax: + 01 234 567 890<br>
-           graphicsfuel@gmail.com
+           <a href="mailto:graphicsfuel@gmail.com">graphicsfuel@gmail.com</a>
          </p>
       </div>
       <div class="subscribe">
         <h3>Subscribe now</h3>
-        <p>Get our latest news and<br>product updates daily</p>
+        <p>Get our latest news and product<br>updates daily</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email">Email Address</label>
           <input type="email" id="email" name="email" placeholder="Email Address">
@@ -201,5 +229,10 @@
         </li>
       </ul>
     </footer>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+      var gliders = $('.slide').glider();
+    </script>
   </body>
 </html>
